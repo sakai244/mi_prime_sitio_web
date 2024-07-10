@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #313030;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #6c6e70;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .back-button:hover {
+            background-color: #f0f0f3;
+        }
+
+        .contact {
+  background-color: #202020d0;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(252, 251, 251, 0.459);
+  padding: 20px;
+  text-align: center;
+}
+.contact h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.contact p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.contact {
+  font-weight: bold;
+  color: #007bff;
+}
+.back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+        .video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.video-bg video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Galería</h1>
+    <div class="gallery">
+        <img src="Galeria/IMG-20240613-WA0016.jpg" alt="Foto 8">
+        <img src="Galeria/IMG-20240613-WA0017.jpg" alt="Foto 8">
+        <img src="Galeria/IMG-20240613-WA0018.jpg" alt="Foto 8">
+        <img src="Galeria/IMG-20240613-WA0019.jpg" alt="Foto 8">
+        <img src="Galeria/IMG-20240613-WA0020.jpg" alt="Foto 8">
+        <img src="Galeria/IMG-20240613-WA0021.jpg" alt="Foto 8">
+        <img src="Galeria/IMG-20240613-WA0022.jpg" alt="Foto 8">
+        <img src="Galeria/IMG-20240613-WA0023.jpg" alt="Foto 8">
+        <img src="Galeria/IMG-20240613-WA0026.jpg" alt="Foto 8">
+        <img src="Galeria/IMG-20240613-WA0027.jpg" alt="Foto 8">
+        <img src="Galeria/IMG-20240613-WA0031.jpg" alt="Foto 8">
+        <img src="Galeria/IMG-20240613-WA0032.jpg" alt="Foto 8">
+        <img src="Galeria/IMG-20240613-WA0033.jpg" alt="Foto 8">
+        <img src="Galeria/Imagen de WhatsApp 2024-06-13 a las 23.21.26_9e15ce9b.jpg" alt="Foto 8">
+        
+    </div>
+    <div class="video-bg">
+        <video autoplay muted loop>
+            <source src="Galeria/Gold Minimalist Quotes Motivational Positivity Video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <a href="arcaPrin.html" class="back-button">Volver al Inicio</a>
+</body>
+</html>

@@ -1,0 +1,18 @@
+Controles:
+
+Enter - Selecionar Opção
+Backspace - Voltar Opção
+I - CIMA
+J - ESQUERDA
+K - BAIXO
+L - DIREITA
+F5 - ABRIR/FECHAR Menu
+
+ATALHOS:
+F6 - Teleportar ao Waypoint
+F7 - Curar-se
+F8 - Escolher Nível de Procurado
+F10 - Teleportar ao Objetivo
+
+Canal ACRE Store:
+https://www.youtube.com/channel/UCl_9NRlexpitho46EpYNMNQ

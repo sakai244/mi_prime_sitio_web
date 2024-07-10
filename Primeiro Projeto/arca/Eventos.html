@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos gerais para o corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #313030;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo para a primeira seção (topo da página) */
+        .section1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Toda a altura da janela visível */
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para a segunda seção (aparece ao rolar para baixo) */
+        .section2 {
+            background-color: #504e4e;
+            display: flex;
+            flex-direction: column;
+            align-items: center ;
+            min-height: 94vh; /* Toda a altura da janela visível */
+            color: #ffffff; /* Cor de texto contrastante */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para a galeria de imagens na segunda seção */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 20px;
+        }
+
+        /* Estilo para as imagens na galeria */
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo para o botão de voltar à página principal */
+        .back-to-home {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #6c6e70;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            z-index: 1000; /* Garante que o botão esteja sempre acima de outros elementos */
+        }
+        .back-to-home:hover {
+            background-color: #f0f0f3;
+        }
+
+        /* Estilo para a imagem na segunda seção */
+        .image-container {
+            text-align: center; /* Alinha o conteúdo ao centro */
+            margin-top: 150px; /* Espaço adicional acima da imagem */
+        }
+        .image-container img {
+            max-width: 80%; /* Reduz a largura máxima da imagem */
+            height: auto; /* Mantém a proporção da imagem */
+            border-radius: 10px; /* Borda arredondada (opcional) */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra (opcional) */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Primeira seção -->
+    <h1 id="Prox">Próximamente</h1>
+    <div class="section1">
+        <div class="video-bg">
+            <video autoplay muted loop>
+                <source src="Galeria/Black and Blue Animated Thank You Video.mp4" type="video/mp4">
+            </video>
+            <div class="image-container">
+                <img src="Galeria/Imagen de WhatsApp 2024-06-14 a las 01.14.45_243785db.jpg" width="400" height="200">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Segunda seção (aparece ao rolar para baixo) -->
+    <div class="section2">
+        <h2>Eventos Pasados</h2>
+        <div class="gallery">
+            <img src="Galeria/Imagen de WhatsApp 2024-06-14 a las 01.08.23_96ee91e1.jpg" alt="Evento 1">
+            <img src="Galeria/Evento.jpg" alt="Evento 2">
+            <img src="Galeria/Imagen de WhatsApp 2024-06-14 a las 01.08.49_83927b07.jpg" alt="Evento 3">
+            <!-- Adicione mais imagens conforme necessário -->
+        </div>
+    </div>
+
+    <!-- Botão para voltar à página principal -->
+    <button class="back-to-home" onclick="window.location.href = 'arcaPrin.html';">Voltar à Página Principal</button>
+
+</body>
+</html>
